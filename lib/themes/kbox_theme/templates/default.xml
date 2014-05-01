@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE html SYSTEM "entities.dtd" > 
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epc="http://eprints.org/ep3/control">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><epc:pin ref="title" textonly="yes"/> - <epc:phrase ref="archive_name"/></title>
+    <link rel="icon" href="{$config{rel_path}}/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="{$config{rel_path}}/favicon.ico" type="image/x-icon"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:700,700italic' rel='stylesheet' type='text/css'/>
+    <epc:pin ref="head"/>
+</head>
+<body>
+	<div id="bh_container">
+		<div id="bh_topbar">
+			<epc:pin ref="login_status"/>	
+
+			<div id="bh_search">
+				<form method="get" action="{$config{rel_path}}/cgi/search/simple">
+					<input id="bh_search_text" type="text" name="q" placeholder="Search" />
+					<input id="bh_search_button" value="Search" type="submit" name="_action_search" /> 
+					<input type="hidden" name="_order" value="bytitle" />
+					<input type="hidden" name="basic_srchtype" value="ALL" />
+					<input type="hidden" name="_satisfyall" value="ALL" />
+					<input type="hidden" name="_default_action" value="search" />
+				</form>
+			</div>
+
+<!--			<a id="bh_search_advanced" href="{$config{rel_path}}/cgi/search/advanced">Advanced Search</a> -->
+
+			<div class="bh_topbar_logo">
+				<a href="{$config{rel_path}}/"> <img src="/images/kbox.png" /> </a>
+			</div>
+
+			<div class="clearer" />
+		</div>
+
+		<div id="bh_content">
+			<h1 class="edshare_page_title"><epc:pin ref="title" /></h1>
+
+			<epc:pin ref="page"/>
+
+			<div class="clearer" />
+		</div>
+
+		<div id="bh_footer">
+			<img src="http://www.bloodhoundssc.com/sites/default/files/bh_logo_footer.jpg" />
+		</div>
+	</div>
+</body>
+</html>

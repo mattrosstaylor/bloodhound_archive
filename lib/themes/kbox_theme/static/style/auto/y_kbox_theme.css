@@ -1,0 +1,213 @@
+body {
+	line-height: 1.2;
+	background: #ececec;
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+}
+
+h1, h2 {
+	font-family: "Lato", sans-serif;
+	color: #414445;
+	font-style: italic;
+}
+
+h1 {
+	font-size: 32px;
+}
+h2 {
+	font-size: 18px;
+}
+
+
+a, a:link, a:active, a:visited, a:hover {
+	color: #f89406;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.clearer {
+	clear: both;
+}
+
+#bh_container {
+	width: 1020px;
+	margin: auto;
+	margin-top: 8px;
+}
+
+#bh_content {
+	font-family: Arial, sans-serif;
+	background: url(/images/kbox_content.png) center 0 no-repeat;
+	padding: 20px;
+	padding-top: 5px;
+}
+
+#bh_topbar {
+	height: auto;
+	margin: 0;
+	padding: 0px 12px;
+	position: relative;
+}
+
+.bh_topbar_logo {
+	float: right;
+}
+
+.bh_topbar_logo img {
+	height: 80px;
+}
+
+
+#bh_footer {
+	border-top: 1px solid #aaa;
+	padding: 24px;
+	margin: 6px;
+}
+
+#bh_search {
+	position: absolute;
+	bottom: 32px;
+	right: 425px;
+}
+
+#bh_search_text {
+	background: url(/images/searchbox.gif) no-repeat;
+	padding: 3px 0 3px 7px !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	margin: 0;
+	width: 140px;
+	border: 0;
+}
+
+#bh_search_button {
+	position: absolute;
+	left: 147px;
+	background: url(/images/searchbox_button.gif) no-repeat transparent;
+	width: 24px;
+	height: 24px;
+	color: transparent;
+	padding: 0 0 0 24px;
+	overflow: hidden;
+	margin: 0;
+	border: 0;
+}
+
+#bh_search_advanced {
+	position:absolute;
+	bottom: 7px;
+	right: 12px;
+}
+
+ul.ep_tm_key_tools {
+	list-style: none outside;
+	position: absolute;
+	bottom: 10px;
+	padding-left: 8px;
+}
+
+.ep_tm_key_tools li:first-child {
+	padding: 0px;
+	border-left: none;
+}
+
+.ep_tm_key_tools li {
+	border: 0;
+	font-size: 14px;
+	padding: 0 4px;
+	margin: 0;
+}
+
+ul.ep_tm_key_tools li > a, ul.ep_tm_key_tools li > a:visited, ul.ep_tm_key_tools li > a:hover, ul.ep_tm_key_tools li > a:active {
+	text-transform: uppercase;
+	background: none;
+	color: #414445;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* remove gradients from everything - gradients suck */
+.ep_msg_message_content, .ep_msg_warning_content, .ep_msg_error_content {
+	font-style: italic;
+	background-image: none;
+	border-color: black;
+}
+
+.ep_msg_message_content {
+	background: #b0e6b0;
+}
+.ep_msg_warning_content {
+	background: #ffe0a0;
+}
+.ep_msg_error_content {
+	background: #e6b0b0;
+}
+
+.ep_tab_panel {
+	background-image: none;
+	background-color: #ececec;
+}
+
+.ep_tab_bar li.ep_tab_selected a {
+	background-color: #ececec;
+}
+
+.ep_tab_bar li a {
+	background-image: none;
+	background-color: #c4caf2;
+}
+
+.ep_sr_title_bar {
+	background-image: none;
+	border-color: #c4caf2;
+	background-color: #ececec !important;
+	padding: 7px !important;
+}
+
+.ep_sr_content {
+	background-image: none;
+	background-color: #ececec;
+	border-color: #c4caf2;
+}
+
+.ep_upload_doc {
+	background-image: none;
+	background-color: #ececec;
+	border-color: #c4caf2;
+}
+
+.ep_search_buttons {
+	border: none;
+	background: none;
+}
+
+#preview_documents {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+/* why is this even red??? */
+a:active, .ep_tm_key_tools a:active {
+	color: #f89406;
+}
+
+/* 
+ * This CSS file will be applied after all the built in styles.
+ * 
+ * CSS files are loaded in alphabetic order, hence the  "zzz" in 
+ * the filename to force it to load after the other css files!
+ * 
+ * Add any local over-rides here. 
+ * 
+ * To totally replace a system css file, create a file of the same 
+ * name in this directory. eg. messages.css
+ * 
+*/
+
+
